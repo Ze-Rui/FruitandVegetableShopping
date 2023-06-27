@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.OrderActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/order_location_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_home_active">
+
+
+        <ImageView
+            android:id="@+id/order_location"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_location">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/order_location"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/order_userInfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/order_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="陆杨"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/order_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="188XXXXXXXX"
+                    android:gravity="left"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/order_user_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/order_userInfo"
+                android:text="52栋B805"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_good_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_home_active"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/order_iv_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/mi" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_tv_name"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:padding="10dp"
+                android:text="二手小米！"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/order_tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:gravity="left"
+                android:text="￥888.00"
+                android:textColor="#ff4242" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="温馨提示 下单前请仔细核对收货地址"
+        android:textSize="13sp"
+        android:textColor="#f43a68"/>
+
+
+    <Button
+        android:id="@+id/order_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交订单"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_order_press"/>
+
+
+</LinearLayout>

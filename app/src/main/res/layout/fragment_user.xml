@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hankkin.gradationscroll.GradationScrollView
+        android:id="@+id/sv_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_person_header"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:background="#f00">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:background="@drawable/my_backgroubd" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+
+            <TextView
+                android:id="@+id/user_location"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_address"
+                android:text="收货地址" />
+
+
+            <TextView
+                android:id="@+id/user_collect"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_collect"
+                android:text="我的订单" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_invitation"
+                android:text="邀请分享" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+
+
+
+            <TextView
+                android:id="@+id/user_setting"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_callcenter"
+                android:text="个人设置" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#eee" />
+
+
+
+            <TextView
+                android:id="@+id/user_logout"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_logout"
+                android:text="退出登录" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="#eee" />
+        </LinearLayout>
+
+    </com.hankkin.gradationscroll.GradationScrollView>
+
+    <TextView
+        android:id="@+id/tv_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="个人中心"
+        android:textColor="#0000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

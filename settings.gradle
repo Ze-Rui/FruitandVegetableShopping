@@ -1,0 +1,9 @@
+include ':ViewPagerIndicator_library'
+include ':opendanmaku'
+include ':okhttputils'
+include ':FlycoTabLayout_Lib'
+include ':gradationscroll'
+include ':aliplay'
+include ':app'
+rootProject.name = "Shopping"
+include ':tBViewer'

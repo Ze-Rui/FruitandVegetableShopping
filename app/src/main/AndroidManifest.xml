@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.shopping">
+
+<queries>
+    <package android:name="com.eg.android.AlipayGphone" />
+    <package android:name="hk.alipay.wallet" />
+</queries>
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application
+    android:name=".app.MyApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:requestLegacyExternalStorage="true"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Shopping"
+    android:usesCleartextTraffic="true">
+    <activity android:name=".app.DynamicActivity" />
+    <activity
+        android:name=".app.MySellerActivity"
+        android:label="@string/title_activity_mySeller"></activity>
+    <activity
+        android:name=".app.SearchActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.LocationActivity"
+        android:label="@string/title_activity_location"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.ChatActivity"
+        android:label="@string/title_activity_chat"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.OrderActivity"
+        android:parentActivityName=".app.GoodsInfoActivity" />
+    <activity
+        android:name=".app.GoodsInfoActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    <activity android:name=".app.Test" />
+    <activity
+        android:name=".home.activity.GoodsListActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity android:name=".user.activity.MessageCenterActivity" />
+    <activity android:name=".app.WelcomeActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".app.MainActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.RegisterActivity"
+        android:label="@string/title_activity_register"
+        android:parentActivityName=".app.LoginActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.HistoryActivity"
+        android:label="@string/title_activity_history"
+        android:parentActivityName=".app.HistoryActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.GouWuActivity"
+        android:label="@string/title_activity_shop"
+        android:parentActivityName=".app.GouWuActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.ModifyActivity"
+        android:label="@string/title_activity_forgetName"
+        android:parentActivityName=".app.ForgetActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.ForgetActivity"
+        android:label="@string/title_activity_forgetName"
+        android:parentActivityName=".app.LoginActivity"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+    <activity
+        android:name=".app.LoginActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:windowSoftInputMode="adjustPan|stateVisible" />
+</application>
+
+</manifest>

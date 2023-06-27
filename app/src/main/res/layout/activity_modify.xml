@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.ModifyActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="请输入新密码"
+            />
+        <EditText
+            android:id="@+id/ed_toPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ed_password"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="请再次输入新密码"
+            />
+        <Button
+            android:id="@+id/btn_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_toPassword"
+            android:background="@drawable/bg_press"
+            android:text="修改"/>
+
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_modify"
+            android:text="两次密码不相等！"
+            android:textSize="15sp"
+            android:textColor="#DC143C"
+            android:gravity="center"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

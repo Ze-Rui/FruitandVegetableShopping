@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="channel">
+        <item>猪肉</item>
+        <item>牛肉 </item>
+        <item>苹果</item>
+        <item>香蕉</item>
+        <item>菠萝</item>
+        <item>野菜</item>
+        <item>大白菜</item>
+        <item>西红柿</item>
+        <item>梨子</item>
+        <item>小白菜</item>
+    </string-array>
+</resources>

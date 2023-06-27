@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_close_key"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改商品"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#eee" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+       android:orientation="vertical">
+       <EditText
+           android:id="@+id/sellGood_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:minHeight="50dp"
+           android:layout_marginTop="15dp"
+           android:singleLine="true"
+           android:hint="请输入商品简介"
+           android:background="@drawable/bg_home_active"
+           />
+
+
+       <EditText
+           android:id="@+id/sellGood_description"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:minHeight="50dp"
+           android:singleLine="true"
+           android:layout_marginTop="15dp"
+           android:hint="请输入商品详细介绍"
+           android:background="@drawable/bg_home_active"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:minHeight="50dp"
+           android:layout_marginTop="15dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#FF4081"
+               android:text="价格 ：￥"/>
+
+           <EditText
+               android:id="@+id/sellGood_price"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:singleLine="true"
+               android:background="@drawable/bg_home_active"
+               android:hint="请确定商品价格"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="15dp"
+           android:minHeight="50dp"
+           android:layout_gravity="center_vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:text="请选择类型："/>
+
+           <Spinner
+               android:id="@+id/spinner1"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:entries="@array/channel"
+               android:background="@drawable/bg_home_active"
+               android:spinnerMode="dialog"/>
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="8dp"
+           android:background="#eee" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="修改"
+           android:background="@color/cutePink"
+           android:layout_gravity="right"
+           android:layout_marginTop="10dp"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>
